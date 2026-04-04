@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="user.css">
+</head>
+
+<body>
+
+
+    <section class="dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h2 class="logo">BlazeTech</h2>
+
+            <ul class="nav_links">
+                <li class="active">Dashboard</li>
+                <li><a href="orders.html">My Orders</a></li>
+                <li>Upload Payment</li>
+                <li>Profile</li>
+                <li>Logout</li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main_content">
+
+            <!-- TOP HEADER -->
+            <div class="top_bar">
+                <div class="top_bar_user">
+                    <h2>My Dashboard</h2>
+                    <p>Welcome back, User 👋</p>
+                </div>
+                <div class="top_bar_icon">
+                    <i class="fas fa-align-justify"></i>
+                </div>
+            </div>
+
+            <!-- STATS -->
+            <div class="stats_container">
+                <div class="stat_card">
+                    <p>Total Orders</p>
+                    <h3>5</h3>
+                </div>
+
+                <div class="stat_card">
+                    <p>Pending</p>
+                    <h3>2</h3>
+                </div>
+
+                <div class="stat_card">
+                    <p>Verified</p>
+                    <h3>3</h3>
+                </div>
+            </div>
+
+            <!-- ORDER TABLE -->
+            <div class="orders_section">
+                <h3>Recent Orders</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Proof</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>#12345</td>
+                            <td><img src="../images/tractor1.jpeg" alt="" class="img"></td>
+                            <td>Mar 25, 2026</td>
+                            <td>₦258,100</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#12346</td>
+                            <td><img src="../images/tractor2.jpeg" alt="" class="img"></td>
+                            <td>Mar 24, 2026</td>
+                            <td>₦120,000</td>
+                            <td><span class="status success">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>#12345</td>
+                            <td><img src="../images/tractor3.jpeg" alt="" class="img"></td>
+                            <td>Mar 25, 2026</td>
+                            <td>₦258,100</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#12346</td>
+                            <td><img src="../images/tractor 4.jpg" alt="" class="img"></td>
+                            <td>Mar 24, 2026</td>
+                            <td>₦120,000</td>
+                            <td><span class="status success">Verified</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <!-- ============== FOOTER SECTION ================ -->
+    <!-- <section class="footer_section">
+        <div class="container">
+            <div class="footer_container">
+                <p>© World-Class Industrial Machines wcim.com. All rights Reserved.</p>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <script src="user.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="hero-section other_pages">
+        <div class="rgba-hero-bg other_pages_rgba">
+            <!-- navBar -->
+            <nav class="navbar">
+                <div class="container nav_center">
+                    <div class="nav_header">
+                        <div class="nav_logo">
+                            <h4>WCIM</h4>
+                        </div>
+                        <button class="nav_btn btn">
+                            <i class="fas fa-align-justify"></i>
+                        </button>
+                    </div>
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About Our Services</a>
+                        <a href="shop.html" class="nav-link">Buy Equipments</a>
+                        <a href="contact-us.html" class="nav-link">Contact Us</a>
+                        <a href="cart.html" class="nav-link only_device">Cart<i class="fa-solid fa-shopping-cart"></i></a>
+                        <a href="./user/dashboard.html" class="nav-link only_device">Dashboard</a>
+                    </div>
+                    <div class="user-links">
+                        <button class="btn btn-white"><a href="index.html"><i
+                                    class="fa-solid fa-circle-user"></i></a></button>
+                        <button class="btn"><a href="index.html"><i
+                                    class="fa-solid fa-cart-arrow-down"></i></a></button>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- header text -->
+            <div class="hero-content">
+                <div class="container text-center bg-header-container">
+                    <h1>Cart</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============== CART SECTION ================ -->
+    <section class="add_to_cart_section">
+        <div class="container">
+            <div class="add_to_cart_container">
+                <div class="product_details_container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><small>PRODUCT</small></th>
+                                <th><small>DETAILS</small></th>
+                                <th><small>TOTAL</small></th>
+                                <th><small></small></th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-body">
+                            <!-- <tr>
+                                <td>
+                                    <a href=""><img src="images/tractor2.jpeg" alt=""></a>
+                                </td>
+                                <td>
+                                    <div class="description_details">
+                                        <p class="product_name">Tractor Machine</p>
+                                        <p>Category: Agriculture</p>
+                                        <p>Condition: Used</p>
+                                        <button class="remove_btn">Remove</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="description_details">
+                                        <p>$257,900.00</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href=""><img src="images/tractor2.jpeg" alt=""></a>
+                                </td>
+                                <td>
+                                    <div class="description_details">
+                                        <p class="product_name">Tractor Machine</p>
+                                        <p>Category: Agriculture</p>
+                                        <p>Condition: Used</p>
+                                        <button class="remove_btn">Remove</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="description_details">
+                                        <p>$257,900.00</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href=""><img src="images/tractor2.jpeg" alt=""></a>
+                                </td>
+                                <td>
+                                    <div class="description_details">
+                                        <p class="product_name">Tractor Machine</p>
+                                        <p>Category: Agriculture</p>
+                                        <p>Condition: Used</p>
+                                        <button class="remove_btn">Remove</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="description_details">
+                                        <p>$257,900.00</p>
+                                    </div>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cart_total_container">
+                    <div class="cart_total_header">
+                        <small>CART TOTAL</small>
+                    </div>
+                    <div class="cart_subtotal">
+                        <p>Subtotal</p>
+                        <p class="cart_price"></p>
+                    </div>
+                    <div class="cart_total">
+                        <p>Total</p>
+                        <p></p>
+                    </div>
+                    <a href="checkout.html"><button class="btn btn-block">Proceed to Checkout <i class="fa-solid fa-arrow-right-long"></i></button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== EMPTY CART SECTION ================ -->
+    <section class="empty_cart_section">
+        <div class="container">
+            <div class="empty_cart_container">
+                <img src="images/undraw_empty-cart_574u.svg" alt="" class="img">
+                <div class="empty_cart_text_container">
+                    <h3>Your cart is empty</h3>
+                    <p>Looks like you haven’t added anything yet.</p>
+                    <a href="shop.html"><button class="btn"><i class="fa-solid fa-arrow-circle-left"></i> Start Shopping</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============== FOOTER SECTION ================ -->
+    <section class="footer_section">
+        <div class="container">
+            <div class="footer_container">
+                <p>© World-Class Industrial Machines wcim.com. All rights Reserved.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

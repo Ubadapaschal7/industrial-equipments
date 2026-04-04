@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+
+    <section class="dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h2 class="logo">BlazeTech</h2>
+
+            <ul class="nav_links">
+                <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="create_orders.html">Create Orders</a></li>
+                <li><a href="total_orders.html">Total orders</a></li>
+                <li><a href="pending_orders.html">Pending</a></li>
+                <li><a href="verified_orders.html">Verified</a></li>
+                <li><a href="create_orders.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main_content">
+
+            <!-- TOP HEADER -->
+            <div class="top_bar">
+                <div class="top_bar_user">
+                    <h2>Admin Dashboard</h2>
+                    <p>Welcome back, Admin 👋</p>
+                </div>
+                <div class="top_bar_icon">
+                    <i class="fas fa-align-justify"></i>
+                </div>
+            </div>
+
+            <div class="confirm_order_container">
+                <div class="order_items_container">
+                    <div class="order_img_container">
+                        <img src="../images/tractor1.jpeg" alt="" class="img">
+                    </div>
+                    <div class="oder_info_container">
+                        <div class="single_order">
+                            <small>ORDER:</small>
+                            <p>#12345</p>
+                        </div>
+                        <div class="single_order">
+                            <small>CUSTOMER:</small>
+                            <p>John Doe</p>
+                        </div>
+                        <div class="single_order">
+                            <small>PRODUCT:</small>
+                            <p>Excavator x1 Excavator x1</p>
+                        </div>
+                        <div class="single_order">
+                            <small>AMOUNT:</small>
+                            <p>$256,709.00</p>
+                        </div>
+                        <div class="single_order">
+                            <small>DATE:</small>
+                            <p>April 12, 2025</p>
+                        </div>
+                        <div class="single_order">
+                            <small>STATUS:</small>
+                            <p>Pending</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order_proof_container">
+                    <h4>Proof of payment</h4>
+                    <p>Please confirm payment and approve or cancel order.</p>
+                    <div class="order_btn_container">
+                        <img src="../images/tractor 7.jpg" alt="" accept="pdf" class="img">
+                        <form action="">
+                            
+                            <button type="submit" class="btn reject" name="action" value="rejected">REJECT</button>
+                            <button type="submit" class="btn approve" name="action" value="approved"> APPROVE</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

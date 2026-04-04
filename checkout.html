@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="hero-section other_pages">
+        <div class="rgba-hero-bg other_pages_rgba">
+            <!-- navBar -->
+            <nav class="navbar">
+                <div class="container nav_center">
+                    <div class="nav_header">
+                        <div class="nav_logo">
+                            <h4>WCIM</h4>
+                        </div>
+                        <button class="nav_btn btn">
+                            <i class="fas fa-align-justify"></i>
+                        </button>
+                    </div>
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About Our Services</a>
+                        <a href="shop.html" class="nav-link">Buy Equipments</a>
+                        <a href="contact-us.html" class="nav-link">Contact Us</a>
+                        <a href="cart.html" class="nav-link only_device">Cart<i class="fa-solid fa-shopping-cart"></i></a>
+                        <a href="./user/dashboard.html" class="nav-link only_device">Dashboard</a>
+                    </div>
+                    <div class="user-links">
+                        <button class="btn btn-white"><a href="index.html"><i
+                                    class="fa-solid fa-circle-user"></i></a></button>
+                        <button class="btn"><a href="index.html"><i
+                                    class="fa-solid fa-cart-arrow-down"></i></a></button>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- header text -->
+            <div class="hero-content">
+                <div class="container text-center bg-header-container">
+                    <h1>Checkout</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="checkout_section">
+    <div class="container">
+        <div class="checkout_container">
+
+            <!-- LEFT: USER DETAILS -->
+            <div class="checkout_form">
+                <h2>Checkout</h2>
+
+                <form action="payment.html" method="POST">
+                    
+                    <div class="form_group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label>Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label>Phone Number</label>
+                        <input type="text" name="phone" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label>Delivery Address</label>
+                        <textarea name="address" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="checkout_btn">
+                        Place Order
+                    </button>
+                </form>
+            </div>
+
+            <!-- RIGHT: ORDER SUMMARY -->
+            <div class="order_summary">
+                <h3>Order Summary</h3>
+
+                <div class="summary_item">
+                    <p>Tractor Machine</p>
+                    <span>$257,900</span>
+                </div>
+
+                <div class="summary_item">
+                    <p>Delivery Fee</p>
+                    <span>$200</span>
+                </div>
+
+                <div class="summary_total">
+                    <p>Total</p>
+                    <span>$258,100</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- ============== FOOTER SECTION ================ -->
+    <section class="footer_section">
+        <div class="container">
+            <div class="footer_container">
+                <p>© World-Class Industrial Machines wcim.com. All rights Reserved.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

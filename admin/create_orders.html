@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+
+    <section class="dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h2 class="logo">BlazeTech</h2>
+
+            <ul class="nav_links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li class="active"><a href="create_orders.html">Create Orders</a></li>
+                <li><a href="total_orders.html">Total orders</a></li>
+                <li><a href="pending_orders.html">Pending</a></li>
+                <li><a href="verified_orders.html">Verified</a></li>
+                <li><a href="create_orders.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main_content">
+
+            <!-- TOP HEADER -->
+            <div class="top_bar">
+                <div class="top_bar_user">
+                    <h2>Admin Dashboard</h2>
+                    <p>Welcome back, Admin 👋</p>
+                </div>
+                <div class="top_bar_icon">
+                    <i class="fas fa-align-justify"></i>
+                </div>
+            </div>
+
+            <!-- STATS -->
+            <div class="stats_container">
+                <div class="stat_card">
+                    <p>Total Orders</p>
+                    <h3>5</h3>
+                </div>
+
+                <div class="stat_card">
+                    <p>Pending</p>
+                    <h3>2</h3>
+                </div>
+
+                <div class="stat_card">
+                    <p>Verified</p>
+                    <h3>3</h3>
+                </div>
+            </div>
+
+            <div class="create_order_container">
+                <form action="" class="form">
+                    <h4>Create new order</h4>
+                    <div class="form-row">
+                        <label for="" class="form-label">Description</label>
+                        <input type="text" class="form-input" name="description">
+                    </div>
+                    <div class="form-row">
+                        <label for="" class="form-label">Price</label>
+                        <input type="number" class="form-input">
+                    </div>
+                    <div class="form-row">
+                        <label for="" class="form-label">Category</label>
+                        <select name="category" class="form-input">
+                            <option value="">Select Category</option>
+                            <option value="manufacturing">Manufacturing Equipment</option>
+                            <option value="construction">Construction Equipment</option>
+                            <option value="agriculture">Agricultural Equipment</option>
+                            <option value="food_processing">Food Processing Equipment</option>
+                            <option value="electrical">Electrical & Power Equipment</option>
+                            <option value="tools">Industrial Tools</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="" class="form-label">Select file</label>
+                        <input type="file" id="fileInput" class="form-input" accept="image/*">
+                        <!-- PREVIEW CONTAINER -->
+                        <div id="previewContainer" class="preview_container">
+                            <p>No file selected</p>
+                        </div>
+                    </div>
+                    <button type="submit" value="create" class="btn btn-block">CREATE</button>
+                </form>
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <script src="admin.js"></script>
+
+    <script>
+        const fileInput = document.getElementById("fileInput");
+        const previewContainer = document.getElementById("previewContainer");
+
+        fileInput.addEventListener("change", function () {
+            const file = this.files[0];
+
+            if (!file) return;
+
+            const fileType = file.type;
+            const fileURL = URL.createObjectURL(file);
+
+            previewContainer.innerHTML = "";
+
+            // IMAGE PREVIEW
+            if (fileType.startsWith("image/")) {
+                previewContainer.innerHTML = `
+            <img src="${fileURL}" class="preview_img">
+        `;
+            }
+            // INVALID FILE
+            else {
+                previewContainer.innerHTML = `<p>Unsupported file type</p>`;
+            }
+        });
+    </script>
+
+    <!-- <script>
+
+        const fileInput = document.getElementById("fileInput");
+        const preview = document.getElementById("preview");
+
+        fileInput.addEventListener("change", function () {
+            const file = this.files[0];
+            if (file) {
+                preview.src = URL.createObjectURL(file);
+                preview.style.display = "block";
+            }
+        });
+
+    </script> -->
+
+</body>
+
+</html>
